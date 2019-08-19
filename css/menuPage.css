@@ -1,0 +1,85 @@
+
+  @media screen and (max-width: 890px){
+    .main{
+     display: flex;
+     flex-direction: column;
+   }
+    .menu1, .menu2{
+      margin-left: 0;
+      margin-right: 0;
+      padding: 0;
+      min-width: 97%;
+      left: 0;
+    }
+  }
+
+  /* Menu */
+  .heading img{
+    width: 33%;
+    margin-left: 33%;
+  }
+
+  .heading p{
+    text-align: center;
+    font-size:26px;
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .main{
+      display: flex;
+      justify-content: center;
+      position: relative;
+  }
+
+  .menu1, .menu2{
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px;
+    width: 50%;
+  }
+
+  .menuContent1, .menuContent2{
+    list-style-type: none;
+    padding: 0;
+    overflow-x: hidden;
+    list-style: none;
+    max-width: auto;
+  }
+
+  .menuContent1 li, .menuContent2 li{
+    padding-bottom: 15px;
+  }
+
+  .menuContent1 li div, .menuContent2 li div{
+    padding-left: 4px;
+    color: #cc5058;
+  }
+
+  .menuContent1 li:before, .menuContent2 li:before {
+    white-space: nowrap;
+    float: left;
+    width: 0;
+    content:
+    ". . . . . . . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . . . . . . ."
+    ". . . . . . . . . . . . . . . . . . . . . . . . ."
+  }
+
+  .menuContent1 li span:first-child, .menuContent2 li span:first-child {
+    padding-right: 4px;
+    background-image: url("pictures\\pic\\home-design.jpg");
+    font-weight: bold;
+    font-size: 17px;
+    font-family: cursive;
+  }
+
+  .menuContent1 li span + span, .menuContent2 li span + span{
+    float: right;
+    padding-left: 6px;
+    background-image: url("pictures\\pic\\home-design.jpg");
+    font-weight: bold;
+    font-size: 17px;
+    font-family: cursive;
+  }

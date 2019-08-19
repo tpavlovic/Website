@@ -1,0 +1,25 @@
+
+  /* Applications Part */
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .column{
+    padding: 3px;
+    width: 25%;
+  }
+
+  @media screen and (max-width: 1000px){
+    .column{
+      max-width: 50%;
+      flex: 50%;
+    }
+  }
+
+  @media screen and (max-width: 600px){
+    .column{
+      max-width: 100%;
+      flex: 100%;
+    }
+  }

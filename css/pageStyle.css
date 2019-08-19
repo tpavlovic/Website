@@ -1,0 +1,130 @@
+*{
+    box-sizing: border-box;
+  }
+
+
+/* Header stranice */
+  .header{
+    text-align: center;
+    padding: 40px;
+    font-family: "Comic Sans MS";
+    font-size: 18px;
+    color: white;
+    position: relative;
+  }
+
+  /* Deo za slike za srpski i engleski jezik */
+  .pictures{
+    width: 68px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  /* Menu Bar */
+  .menubar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #2e2e2e;
+    width: 100%;
+  }
+
+  .divAlign li{
+    float: left;
+  }
+
+  .divAlign li a{
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    padding: 15px;
+  }
+
+  .menubar ul li a:hover, .dropdown:hover .dropbtn{
+    background-color: #242424;
+  }
+
+  .dropdown-content{
+    background-color: #D99A6C;
+    position: absolute;
+    z-index: 1;
+    display: none;
+  }
+
+  .dropdown .dropdown-content a{
+    display: block;
+    color: #2e2e2e;
+  }
+
+  .dropdown:hover .dropdown-content{
+    display: block;
+  }
+
+  .dropdown .dropdown-content a:hover{
+    color: white;
+  }
+
+  .divAlign{
+    margin-left: 30%;
+  }
+
+
+  @media screen and (max-width: 1280px){
+    .applications{
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 1250px){
+    .divAlign{
+      margin-left: 0;
+    }
+  }
+
+  @media screen and (max-width: 650px){
+    .divAlign li{
+      float: none;
+      text-align: center;
+    }
+
+    .dropdown-content{
+      width: 50%;
+      margin-left: 25%;
+    }
+
+    .mainContent{
+      display: flex;
+      flex-direction: column;
+    }
+
+  }
+
+    /* Applications Part */
+
+  .app{
+    height: 100%;
+    border-top: 1px #888888 solid;
+    width: 100%;
+    background-color: #4d4d4d;
+    padding-bottom: 2%;
+  }
+
+  .app .image{
+    margin-top: 2%;
+    padding-left: 12%;
+  }
+
+  .app .image img{
+    height: 70px;
+    margin-right: 25px;
+    cursor: pointer;
+  }
+
+  /* Footer*/
+  .footer{
+    border-top: 1px white solid;
+    background-color: #262626;
+    height: 5%;
+  }

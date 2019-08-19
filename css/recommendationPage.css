@@ -1,0 +1,53 @@
+
+  /*Gallery for Recommendation*/
+
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+    justify-content: center;
+  }
+
+
+  .gallery > div.galleryFrame{
+    border: 2px solid grey;
+    border-radius: 4px;
+    text-align: center;
+    width: 400px;
+    box-shadow:  0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    padding: 5px;
+    position: relative;
+    margin: 8px;
+  }
+
+  .overlay{
+    background-color:#FF9966;
+    width: 100%;
+    height: 0;
+    bottom: 100%;
+    right: 0;
+    top: 0;
+    left: 0;
+    position:absolute;
+    opacity: 0;
+    transition: .9s ease;
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+  }
+
+  .overlay .text{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+
+  .galleryFrame:hover .overlay{
+    opacity: 0.9;
+    height: 100%;
+  }
+
+  .decText span{
+    font-family: cursive;
+  }
